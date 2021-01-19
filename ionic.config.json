@@ -1,0 +1,7 @@
+{
+  "name": "empleosUPS",
+  "integrations": {
+    "capacitor": {}
+  },
+  "type": "angular"
+}
