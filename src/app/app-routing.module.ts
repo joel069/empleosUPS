@@ -10,6 +10,14 @@ const routes: Routes = [
   {
     path: 'folder/:id',
     loadChildren: () => import('./folder/folder.module').then( m => m.FolderPageModule)
+  },
+  {
+    path: 'contacto',
+    loadChildren: () => import('./contact/contact.module').then( m => m.ContactPageModule)
+  },
+  {
+    path: 'confirmacion-mensaje',
+    loadChildren: () => import('./confirmacion-mensaje/confirmacion-mensaje.module').then( m => m.ConfirmacionMensajePageModule)
   }
 ];
 

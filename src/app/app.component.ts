@@ -3,6 +3,7 @@ import { Component, OnInit } from '@angular/core';
 import { Platform } from '@ionic/angular';
 import { SplashScreen } from '@ionic-native/splash-screen/ngx';
 import { StatusBar } from '@ionic-native/status-bar/ngx';
+import { escapeIdentifier } from '@angular/compiler/src/output/abstract_emitter';
 
 @Component({
   selector: 'app-root',
@@ -11,6 +12,7 @@ import { StatusBar } from '@ionic-native/status-bar/ngx';
 })
 export class AppComponent implements OnInit {
   public selectedIndex = 0;
+  correo = "fvasquezf1@est.ups.edu.ec";
   public appPages = [
     {
       title: 'Inbox',
@@ -21,6 +23,11 @@ export class AppComponent implements OnInit {
       title: 'Outbox',
       url: '/folder/Outbox',
       icon: 'paper-plane'
+    },
+    {
+      title: 'Contactos',
+      url: '/contacto',
+      icon: 'paper-fly'
     },
     {
       title: 'Favorites',
